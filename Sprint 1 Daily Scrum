@@ -1,0 +1,13 @@
+What did you do in the last 24 hours that helped the Development Team meet the Sprint Goal?
+In the last 24 hours, I focused on completing tasks related to the first user story. I implemented functionalities for selecting preferred games and playstyle options using React. I also started writing unit tests
+for these features and plan to push my code to the designated branch in the GitHub repository. I also monitored the overall sprint progress and adjusted the burndown chart accordingly. Additionally, I considered
+front-end development using React a blocker since I have not used it before, so finding relevant resources took a little bit more time than expected to complete tasks.
+
+What will you do in the next 24 hours to help the Development Team meet the Sprint Goal?
+My next 24 hours will be dedicated to completing the tasks related to the first user story. I plan to integrate the player profile data with the game data API and develop the initial logic for matching players
+based on skill and playstyle preferences. I'll also start writing integration tests for these functionalities and contribute to code reviews on other team members' work to ensure quality and progress. Scrum master
+duties will be to ensure continued prioritization of user stories and adapt the sprint backlog based on progress. I’m also keeping the burndown chart updated.
+
+Do you see any impediment that prevents you or the Development Team from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan?
+I see a potential impediment regarding the complexity of matching algorithms for User Story 2. It might require more time and expertise than initially estimated. My plan is to research resources to assist with
+efficient algorithm development. I am also considering  splitting the story into even smaller tasks to prioritize the core matching functionality within the sprint.
