@@ -1,0 +1,28 @@
+// Import the function to be tested
+import { handleProfileChange } from './App';
+
+// Mock the setProfile function
+const setProfile = jest.fn();
+
+test('handleProfileChange updates the profile state correctly', () => {
+  // Setup
+  const initialProfile = {
+    username: '',
+    skillLevel: '',
+    playStyle: '',
+    communicationPreference: ''
+  };
+  const event = { target: { name: 'username', value: 'testUser' } };
+
+  // Call the function
+  handleProfileChange(event, setProfile, initialProfile);
+
+  // Check if setProfile was called with the updated profile
+  expect(setProfile).toHaveBeenCalledWith({
+    username: 'testUser',
+    skillLevel: '',
+    playStyle: '',
+    communicationPreference: ''
+  });
+});
+ 
