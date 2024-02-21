@@ -1,0 +1,21 @@
+// FriendList.test.js
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import FriendList from './FriendList';
+
+test('renders a list of friends', () => {
+  const friends = [
+    { id: 1, username: 'Alice', skillLevel: 'Intermediate', playStyle: 'Collaborative' },
+    { id: 2, username: 'Bob', skillLevel: 'Advanced', playStyle: 'Competitive' },
+    { id: 3, username: 'Charlie', skillLevel: 'Beginner', playStyle: 'Aggressive' },
+  ];
+
+  render(<FriendList friends={friends} />);
+
+  const friendElements = screen.getAllByRole('listitem');
+  expect(friendElements).toHaveLength(3);
+
+  expect(friendElements[0]).toHaveTextContent('Alice');
+  expect(friendElements[1]).toHaveTextContent('Bob');
+  expect(friendElements[2]).toHaveTextContent('Charlie');
+});
